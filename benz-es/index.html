@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_FC8V9Q8Uj6KBYWJUCKhrU");
+    })();
+    </script>
+
+    <title>BENZ 견적문의</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section class="main_img">
+        <div class="main_inner">
+
+            <div class="main_title">최고의 차 최고의 사후관리로
+                보답 해드리겠습니다.</div>
+        </div>
+    </section>
+    <section class="input">
+        <div class="userinfo">
+
+                <div class="infotitle">이름</div>
+                 <input type="text" id="name" class="userinput">
+
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">연락처</div>
+            <div class="userinput tellnumber">
+                <input type="tel" id="tell_1" maxlength="3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"> -
+                <input type="tel" id="tell_2" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"> -
+                <input type="tel" id="tell_3" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+            </div>
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">통화가능시간</div>
+            <div class="userinput tellhours">
+                <select name="" id="tell_hour1">
+                    <option>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                </select>
+                :
+                <select name="" id="tell_hour2">
+                    <option>00</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+                ~
+                <select name="" id="tell_hour3">
+                    <option>00</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                </select>
+                :
+                <select name="" id="tell_hour4">
+                    <option>00</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">Benz 모델선택</div>
+            
+            <select id="car_model" selected="selected" class="userinput">
+                <option>A-Class</option>
+                <option>CLA-Class</option>
+                <option>B-Class</option>
+                <option>C-Class</option>
+                <option>E-Class</option>
+                <option>CLS-Class</option>
+                <option>S-Class</option>
+                <option>G-Class</option>
+                <option>GLC</option>
+                <option>GLE</option>
+                <option>GLS</option>
+                <option>SLK-Class</option>
+                <option>SL-Class</option>
+                <option>SLS AMG</option>
+            </select>
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">지역</div>
+            
+            <input type="text" id="where" class="userinput">
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">구매방식</div>
+            
+            <select id="pay" selected="selected" class="userinput">
+                <option>전액현금</option>
+                <option>현금+할부</option>
+                <option>전액할부</option>
+                <option>리스</option>
+            </select>
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">구입계획</div>
+            
+            <select id="sells" selected="selected" class="userinput">
+                <option>1개월내</option>
+                <option>3개월내</option>
+                <option>6개월내</option>
+                <option>미정</option>
+            </select>
+        </div>
+        <div class="userinfo">
+            <div class="infotitle">Comment</div>
+            
+            <input id="comment" type="text" class="userinput">
+        </div>
+        <div class="userinfo clearfix">
+            <div class="infotitle">약관동의</div>
+            
+            <div class="check_list" >
+                1. 수집하는 개인정보의 항목<br/>
+                - 필수항목 : 이름, 연락처, 통화가능시간, BENZ 모델, 구매방식, 구입계획
+                <br/>
+                <br/>
+                <br/>
+                2. 개인정보의 수집 및 이용목적<br/>
+                - 이용자 요청 자료에 대한 온/오프라인 응대 : 회사의 특성상 발생하는 판매 상품에 대한 자료/견적/시승 요청에 대한 응대, 고객서비스 요청에 대한 응대
+            </div> 
+        </div>
+        <div class="agree_div">
+            <input type="checkbox"id="agree"><label for="agree">동의</label>
+        </div>        
+        <div id="btn">신청하기</div>
+    </section>
+    <footer>
+        <div></div>
+        
+    </footer>
+    <script src="js/mail.js"></script>
+</body>
+</html>
